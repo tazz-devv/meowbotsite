@@ -1621,175 +1621,380 @@
               </div>
 
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 bg-gradient-to-br from-[#252530]/50 to-[#2a2a30]/50" id="commands-grid">
-                <!-- Command 1 -->
-                <div class="command-card group rounded-lg border border-pink-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-pink-900/10 p-4 transition-all hover:border-pink-500/50 hover:bg-pink-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-pink-500/20 flex items-center justify-center text-pink-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-pink-400">/adopt</h3>
-                      <p class="text-gray-300 text-sm">Adopt your own virtual cat</p>
-                    </div>
-                  </div>
-                </div>
+       <!-- Commands Section -->
+<section id="commands" class="py-16 bg-gradient-to-b from-[#1a0b2e] to-[#0f0f19] relative">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-600/20 via-cyan-900/10 to-transparent"></div>
+  <div class="absolute inset-0 bg-noise-pattern opacity-[0.03]"></div>
+  <div class="container px-4 md:px-6 relative">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center mb-12 fade-in">
+      <div class="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/20 text-blue-400 text-sm font-medium mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+          <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path>
+        </svg>
+        <span>All Commands</span>
+      </div>
+      <div class="space-y-2">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-500">
+          MeowBot Commands
+        </h2>
+        <p class="max-w-[800px] text-gray-300 text-lg">
+          Here are all the commands you can use with MeowBot!
+        </p>
+      </div>
+    </div>
 
-                <!-- Command 2 -->
-                <div class="command-card group rounded-lg border border-cyan-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-cyan-900/10 p-4 transition-all hover:border-cyan-500/50 hover:bg-cyan-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-cyan-400">/feed</h3>
-                      <p class="text-gray-300 text-sm">Feed your cat to reduce hunger</p>
-                    </div>
-                  </div>
-                </div>
+    <div class="mt-8 max-w-5xl mx-auto">
+      <div class="bg-[#2a2a30]/70 border border-gray-700 rounded-xl overflow-hidden">
+        <div class="flex items-center px-4 py-2 border-b border-gray-700 bg-gradient-to-r from-[#2a2a30] to-[#252530]">
+          <div class="flex space-x-2">
+            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          </div>
+          <div class="mx-auto text-base text-gray-300">🐱 Cat Commands</div>
+        </div>
 
-                <!-- Command 3 -->
-                <div class="command-card group rounded-lg border border-purple-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-purple-900/10 p-4 transition-all hover:border-purple-500/50 hover:bg-purple-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-purple-500/20 flex items-center justify-center text-purple-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-purple-400">/pet</h3>
-                      <p class="text-gray-300 text-sm">Pet your cat to increase happiness</p>
-                    </div>
-                  </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 bg-gradient-to-br from-[#252530]/50 to-[#2a2a30]/50" id="commands-grid">
+          <!-- Cat Commands -->
+          <div class="command-card group rounded-lg border border-pink-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-pink-900/10 p-4 transition-all hover:border-pink-500/50 hover:bg-pink-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-pink-500/20 flex items-center justify-center text-pink-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-pink-400">/adopt [breed]</h3>
+                <p class="text-gray-300 text-sm">Adopt a virtual cat</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Command 4 -->
-                <div class="command-card group rounded-lg border border-amber-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-amber-900/10 p-4 transition-all hover:border-amber-500/50 hover:bg-amber-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-amber-500/20 flex items-center justify-center text-amber-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-amber-400">/catstats</h3>
-                      <p class="text-gray-300 text-sm">Check your cat's stats</p>
-                    </div>
-                  </div>
+          <div class="command-card group rounded-lg border border-cyan-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-cyan-900/10 p-4 transition-all hover:border-cyan-500/50 hover:bg-cyan-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-cyan-400">/feed [item]</h3>
+                <p class="text-gray-300 text-sm">Feed your cat with items</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Command 5 -->
-                <div class="command-card group rounded-lg border border-green-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-green-900/10 p-4 transition-all hover:border-green-500/50 hover:bg-green-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-green-500/20 flex items-center justify-center text-green-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-green-400">/shop</h3>
-                      <p class="text-gray-300 text-sm">View items available in the shop</p>
-                    </div>
-                  </div>
+          <div class="command-card group rounded-lg border border-purple-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-purple-900/10 p-4 transition-all hover:border-purple-500/50 hover:bg-purple-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-purple-500/20 flex items-center justify-center text-purple-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-purple-400">/pet</h3>
+                <p class="text-gray-300 text-sm">Pet your cat to increase happiness</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Command 6 -->
-                <div class="command-card group rounded-lg border border-blue-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-blue-900/10 p-4 transition-all hover:border-blue-500/50 hover:bg-blue-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-blue-500/20 flex items-center justify-center text-blue-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-blue-400">/buy</h3>
-                      <p class="text-gray-300 text-sm">Purchase items from the shop</p>
-                    </div>
-                  </div>
+          <div class="command-card group rounded-lg border border-amber-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-amber-900/10 p-4 transition-all hover:border-amber-500/50 hover:bg-amber-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-amber-500/20 flex items-center justify-center text-amber-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-amber-400">/play [item]</h3>
+                <p class="text-gray-300 text-sm">Play with your cat using toys</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Command 7 -->
-                <div class="command-card group rounded-lg border border-pink-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-pink-900/10 p-4 transition-all hover:border-pink-500/50 hover:bg-pink-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-pink-500/20 flex items-center justify-center text-pink-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-pink-400">/inventory</h3>
-                      <p class="text-gray-300 text-sm">View your cat's inventory</p>
-                    </div>
-                  </div>
+          <div class="command-card group rounded-lg border border-green-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-green-900/10 p-4 transition-all hover:border-green-500/50 hover:bg-green-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-green-500/20 flex items-center justify-center text-green-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-green-400">/catstats</h3>
+                <p class="text-gray-300 text-sm">Check your cat's stats</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Command 8 -->
-                <div class="command-card group rounded-lg border border-cyan-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-cyan-900/10 p-4 transition-all hover:border-cyan-500/50 hover:bg-cyan-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-cyan-400">/daily</h3>
-                      <p class="text-gray-300 text-sm">Claim your daily fishcoins</p>
-                    </div>
-                  </div>
+          <div class="command-card group rounded-lg border border-blue-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-blue-900/10 p-4 transition-all hover:border-blue-500/50 hover:bg-blue-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-blue-500/20 flex items-center justify-center text-blue-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-blue-400">/shop</h3>
+                <p class="text-gray-300 text-sm">View items available in the shop</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Command 9 -->
-                <div class="command-card group rounded-lg border border-purple-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-purple-900/10 p-4 transition-all hover:border-purple-500/50 hover:bg-purple-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-purple-500/20 flex items-center justify-center text-purple-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-purple-400">/duel</h3>
-                      <p class="text-gray-300 text-sm">Challenge another user's cat to a duel</p>
-                    </div>
-                  </div>
+          <div class="command-card group rounded-lg border border-pink-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-pink-900/10 p-4 transition-all hover:border-pink-500/50 hover:bg-pink-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-pink-500/20 flex items-center justify-center text-pink-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-pink-400">/buy [item]</h3>
+                <p class="text-gray-300 text-sm">Purchase items from the shop</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Command 10 -->
-                <div class="command-card group rounded-lg border border-amber-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-amber-900/10 p-4 transition-all hover:border-amber-500/50 hover:bg-amber-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-amber-500/20 flex items-center justify-center text-amber-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-amber-400">/catpic</h3>
-                      <p class="text-gray-300 text-sm">Get a random cat picture</p>
-                    </div>
-                  </div>
+          <div class="command-card group rounded-lg border border-cyan-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-cyan-900/10 p-4 transition-all hover:border-cyan-500/50 hover:bg-cyan-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-cyan-400">/inventory</h3>
+                <p class="text-gray-300 text-sm">View your inventory</p>
+              </div>
+            </div>
+          </div>
 
-                <!-- Command 11 -->
-                <div class="command-card group rounded-lg border border-green-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-green-900/10 p-4 transition-all hover:border-green-500/50 hover:bg-green-500/5">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 mr-3">
-                      <div class="w-8 h-8 rounded-md bg-green-500/20 flex items-center justify-center text-green-400 text-base">
-                        /
-                      </div>
-                    </div>
-                    <div>
-                      <h3 class="text-base font-bold text-green-400">/catfact</h3>
-                      <p class="text-gray-300 text-sm">Get a random cat fact</p>
-                    </div>
-                  </div>
+          <div class="command-card group rounded-lg border border-purple-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-purple-900/10 p-4 transition-all hover:border-purple-500/50 hover:bg-purple-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-purple-500/20 flex items-center justify-center text-purple-400 text-base">
+                  /
                 </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-purple-400">/daily</h3>
+                <p class="text-gray-300 text-sm">Claim your daily fishcoins</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-amber-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-amber-900/10 p-4 transition-all hover:border-amber-500/50 hover:bg-amber-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-amber-500/20 flex items-center justify-center text-amber-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-amber-400">/balance</h3>
+                <p class="text-gray-300 text-sm">Check your fishcoins balance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-green-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-green-900/10 p-4 transition-all hover:border-green-500/50 hover:bg-green-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-green-500/20 flex items-center justify-center text-green-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-green-400">/duel [user] [bet]</h3>
+                <p class="text-gray-300 text-sm">Challenge another cat owner to a duel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-blue-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-blue-900/10 p-4 transition-all hover:border-blue-500/50 hover:bg-blue-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-blue-500/20 flex items-center justify-center text-blue-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-blue-400">/catpic</h3>
+                <p class="text-gray-300 text-sm">Get a random cat picture</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-pink-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-pink-900/10 p-4 transition-all hover:border-pink-500/50 hover:bg-pink-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-pink-500/20 flex items-center justify-center text-pink-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-pink-400">/catfact</h3>
+                <p class="text-gray-300 text-sm">Get a random cat fact</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-cyan-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-cyan-900/10 p-4 transition-all hover:border-cyan-500/50 hover:bg-cyan-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-cyan-400">/rename [name]</h3>
+                <p class="text-gray-300 text-sm">Rename your cat</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-purple-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-purple-900/10 p-4 transition-all hover:border-purple-500/50 hover:bg-purple-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-purple-500/20 flex items-center justify-center text-purple-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-purple-400">/breed [breed]</h3>
+                <p class="text-gray-300 text-sm">Change your cat's breed</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <!-- Moderation Commands Header -->
+        <div class="flex items-center px-4 py-2 border-b border-gray-700 bg-gradient-to-r from-[#2a2a30] to-[#252530]">
+          <div class="flex space-x-2">
+            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          </div>
+          <div class="mx-auto text-base text-gray-300">🛠️ Moderation Commands</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 bg-gradient-to-br from-[#252530]/50 to-[#2a2a30]/50">
+          <!-- Moderation Commands -->
+          <div class="command-card group rounded-lg border border-red-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-red-900/10 p-4 transition-all hover:border-red-500/50 hover:bg-red-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-red-500/20 flex items-center justify-center text-red-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-red-400">/scratch [user] [duration] [reason]</h3>
+                <p class="text-gray-300 text-sm">Mute a user</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-yellow-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-yellow-900/10 p-4 transition-all hover:border-yellow-500/50 hover:bg-yellow-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-yellow-500/20 flex items-center justify-center text-yellow-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-yellow-400">/hiss [user] [reason]</h3>
+                <p class="text-gray-300 text-sm">Warn a user</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-red-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-red-900/10 p-4 transition-all hover:border-red-500/50 hover:bg-red-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-red-500/20 flex items-center justify-center text-red-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-red-400">/banish [user] [reason] [days]</h3>
+                <p class="text-gray-300 text-sm">Ban a user</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-orange-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-orange-900/10 p-4 transition-all hover:border-orange-500/50 hover:bg-orange-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-orange-500/20 flex items-center justify-center text-orange-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-orange-400">/remove [user] [reason]</h3>
+                <p class="text-gray-300 text-sm">Kick a user</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-blue-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-blue-900/10 p-4 transition-all hover:border-blue-500/50 hover:bg-blue-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-blue-500/20 flex items-center justify-center text-blue-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-blue-400">/purge [amount]</h3>
+                <p class="text-gray-300 text-sm">Delete multiple messages</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-green-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-green-900/10 p-4 transition-all hover:border-green-500/50 hover:bg-green-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-green-500/20 flex items-center justify-center text-green-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-green-400">/lock [reason]</h3>
+                <p class="text-gray-300 text-sm">Lock the current channel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-purple-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-purple-900/10 p-4 transition-all hover:border-purple-500/50 hover:bg-purple-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-purple-500/20 flex items-center justify-center text-purple-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-purple-400">/unlock</h3>
+                <p class="text-gray-300 text-sm">Unlock the current channel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="command-card group rounded-lg border border-pink-800/30 bg-gradient-to-br from-[#2a2a30]/30 to-pink-900/10 p-4 transition-all hover:border-pink-500/50 hover:bg-pink-500/5">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-md bg-pink-500/20 flex items-center justify-center text-pink-400 text-base">
+                  /
+                </div>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-pink-400">/purgebot [amount]</h3>
+                <p class="text-gray-300 text-sm">Purge bot messages in this channel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- CTA Section -->
       <section class="py-16 bg-gradient-to-b from-[#0f0f19] via-[#1a0b2e] to-[#0f0f19] relative">
