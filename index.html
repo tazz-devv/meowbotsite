@@ -1341,57 +1341,59 @@
 </head>
 <body>
 
-<div class="flex items-center gap-2 fade-in">
-  <img src="assets/logo.png" alt="MeowBot Logo" class="h-7 w-7 logo-img">
-  <span class="text-xl font-bold">MeowBot</span>
-  <span class="text-xs font-medium text-gray-400 ml-1">
-    by <a href="https://taztatic.com" target="_blank" class="text-pink-400 hover:text-pink-300 transition-colors">@fucktazz</a>
-  </span>
-</div>
+<header class="sticky top-0 z-50 w-full border-b border-gray-800/50 bg-[#0f0f19]/90 backdrop-blur-lg">
+  <div class="container flex h-16 items-center justify-between">
+    <div class="flex items-center gap-2 fade-in">
+      <img src="assets/logo.png" alt="MeowBot Logo" class="h-7 w-7 logo-img">
+      <span class="text-xl font-bold">MeowBot</span>
+      <span class="text-xs font-medium text-gray-400 ml-1">
+        by <a href="https://taztatic.com" target="_blank" class="text-pink-400 hover:text-pink-300 transition-colors">@fucktazz</a>
+      </span>
+    </div>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-6">
-          <div class="fade-in delay-100">
-            <a href="#features" class="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
-              Features
-            </a>
-          </div>
-          <div class="fade-in delay-200">
-            <a href="#commands" class="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
-              Commands
-            </a>
-          </div>
-          <div class="fade-in delay-300">
-            <a href="https://discord.gg/58AeY3gG" target="_blank" class="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
-              Support
-            </a>
-          </div>
-        </nav>
-
-        <!-- Mobile Menu Button -->
-        <div class="flex md:hidden">
-          <button id="mobile-menu-button" class="text-gray-300 hover:text-pink-500 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-              <line x1="4" x2="20" y1="12" y2="12"></line>
-              <line x1="4" x2="20" y1="6" y2="6"></line>
-              <line x1="4" x2="20" y1="18" y2="18"></line>
-            </svg>
-          </button>
-        </div>
-
-        <div class="hidden md:flex items-center gap-4 fade-in">
-          <a href="https://discord.com/oauth2/authorize?client_id=1375700760683085884&permissions=8&integration_type=0&scope=bot" target="_blank">
-            <button class="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-sm btn btn-primary">
-              Add to Discord
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
-            </button>
-          </a>
-        </div>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-6">
+      <div class="fade-in delay-100">
+        <a href="#features" class="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
+          Features
+        </a>
       </div>
-    </header>
+      <div class="fade-in delay-200">
+        <a href="#commands" class="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
+          Commands
+        </a>
+      </div>
+      <div class="fade-in delay-300">
+        <a href="https://discord.gg/58AeY3gG" target="_blank" class="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
+          Support
+        </a>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <div class="flex md:hidden">
+      <button id="mobile-menu-button" class="text-gray-300 hover:text-pink-500 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="hidden md:flex items-center gap-4 fade-in">
+      <a href="https://discord.com/oauth2/authorize?client_id=1375700760683085884&permissions=8&integration_type=0&scope=bot" target="_blank">
+        <button class="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-sm btn btn-primary">
+          Add to Discord
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </button>
+      </a>
+    </div>
+  </div>
+</header>
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="md:hidden fixed inset-x-0 top-16 z-40 bg-[#121212] border-b border-gray-800 overflow-hidden hidden">
