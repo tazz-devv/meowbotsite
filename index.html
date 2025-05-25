@@ -1336,7 +1336,132 @@
       .features-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
-    }
+    /* Mobile Navbar Fixes */
+@media (max-width: 767px) {
+  /* Ensure navbar stays on top and has proper spacing */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    background-color: #0f0f19;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Fix for hamburger menu */
+  .mobile-menu-button {
+    display: block;
+    z-index: 110;
+  }
+
+  /* Mobile menu overlay */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 15, 25, 0.95);
+    z-index: 105;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Show mobile menu when active */
+  .mobile-menu.active {
+    transform: translateY(0);
+  }
+
+  /* Nav items in mobile menu */
+  .mobile-menu .nav-item {
+    padding: 1rem;
+    font-size: 1.25rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+  }
+
+  .mobile-menu.active .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger animations */
+  .mobile-menu.active .nav-item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .mobile-menu.active .nav-item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .mobile-menu.active .nav-item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  /* Add more as needed */
+
+  /* Hide desktop nav items on mobile */
+  .desktop-nav {
+    display: none;
+  }
+
+  /* Ensure content doesn't hide behind navbar */
+  body {
+    padding-top: 60px; /* Adjust based on your navbar height */
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* Additional fixes that might help */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  z-index: 110; /* Above mobile menu */
+}
+
+.nav-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Close button for mobile menu */
+.mobile-close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 110;
+}
   </style>
 </head>
 <body>
