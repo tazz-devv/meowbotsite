@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MeowBot - All Commands</title>
-  <meta name="description" content="Complete list of all MeowBot commands for virtual cat adoption and server moderation.">
+  <meta name="description" content="Complete list of MeowBot commands for virtual cat care and server moderation">
 
   <link rel="icon" href="assets/logo.png" type="image/png">
   <link rel="shortcut icon" href="assets/logo.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/logo.png">
 
   <style>
+    
     :root {
       --background: 0 0% 0%;
       --foreground: 0 0% 95%;
@@ -34,6 +35,7 @@
       --radius: 0.5rem;
     }
 
+    
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -65,6 +67,7 @@
       color: inherit;
     }
 
+    
     .container {
       width: 100%;
       max-width: 1400px;
@@ -278,6 +281,7 @@
       padding: 1.5rem;
     }
 
+    
     .text-4xl {
       font-size: 2.25rem;
       line-height: 2.5rem;
@@ -330,6 +334,7 @@
       letter-spacing: -0.05em;
     }
 
+    
     .text-white {
       color: white;
     }
@@ -466,6 +471,7 @@
       background-color: #10b981;
     }
 
+    
     .border {
       border-width: 1px;
       border-style: solid;
@@ -546,6 +552,7 @@
       border-color: rgba(168, 85, 247, 0.2);
     }
 
+    
     .rounded-full {
       border-radius: 9999px;
     }
@@ -562,6 +569,7 @@
       border-radius: 0.375rem;
     }
 
+    
     .shadow-lg {
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
@@ -570,6 +578,7 @@
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     }
 
+    
     .bg-gradient-to-r {
       background-image: linear-gradient(to right, var(--tw-gradient-stops));
     }
@@ -738,6 +747,7 @@
       --tw-gradient-stops: var(--tw-gradient-from), #8b5cf6, var(--tw-gradient-to, rgba(139, 92, 246, 0));
     }
 
+    
     .bg-clip-text {
       -webkit-background-clip: text;
       background-clip: text;
@@ -815,6 +825,7 @@
       pointer-events: none;
     }
 
+    
     .transition-colors {
       transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -837,6 +848,7 @@
       transition-duration: 300ms;
     }
 
+    
     .hover\:text-pink-500:hover {
       color: #ec4899;
     }
@@ -987,6 +999,7 @@
       background-color: rgba(59, 130, 246, 0.2);
     }
 
+    
     .bg-noise-pattern {
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
       background-repeat: repeat;
@@ -999,6 +1012,7 @@
       background-size: 30px 30px;
     }
 
+    
     @keyframes float {
       0% {
         transform: translateY(0px);
@@ -1099,6 +1113,7 @@
       text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
     }
 
+    
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -1138,6 +1153,7 @@
       animation-delay: 0.7s;
     }
 
+    
     .btn {
       display: inline-flex;
       align-items: center;
@@ -1192,6 +1208,7 @@
       border-width: 0;
     }
 
+    
     @media (min-width: 640px) {
       .sm\:flex-row {
         flex-direction: row;
@@ -1260,6 +1277,7 @@
       }
     }
 
+    
     .grid {
       display: grid;
     }
@@ -1288,31 +1306,22 @@
       margin-top: 1.5rem;
     }
 
+    
     .logo-img {
       width: 28px;
       height: 28px;
       object-fit: contain;
     }
 
+    
     .badge-sm {
       padding: 0.15rem 0.5rem;
       font-size: 0.75rem;
     }
 
-    /* Command list styles */
+    
     .command-section {
       margin-bottom: 3rem;
-    }
-
-    .command-section-title {
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-image: linear-gradient(to right, #ec4899, #8b5cf6);
     }
 
     .command-list {
@@ -1328,58 +1337,61 @@
     }
 
     .command-item {
-      background-color: rgba(42, 42, 48, 0.7);
-      border: 1px solid rgba(55, 65, 81, 0.5);
-      border-radius: 0.75rem;
+      display: flex;
       padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: rgba(42, 42, 48, 0.5);
+      border: 1px solid rgba(55, 65, 81, 0.5);
       transition: all 0.3s ease;
     }
 
     .command-item:hover {
+      background-color: rgba(42, 42, 48, 0.8);
       border-color: rgba(236, 72, 153, 0.5);
+    }
+
+    .command-prefix {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.375rem;
       background-color: rgba(236, 72, 153, 0.1);
+      color: #f472b6;
+      font-weight: 500;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .command-details {
+      flex: 1;
     }
 
     .command-name {
       font-weight: 600;
-      color: #f472b6;
-      margin-bottom: 0.5rem;
+      color: white;
+      margin-bottom: 0.25rem;
     }
 
-    .command-description {
+    .command-args {
+      color: #9ca3af;
+      font-size: 0.875rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .command-desc {
       color: #d1d5db;
       font-size: 0.875rem;
     }
 
-    /* View All Commands button */
-    .view-all-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.75rem;
-      font-weight: 500;
-      font-size: 0.875rem;
-      background-color: rgba(34, 211, 238, 0.1);
-      color: #22d3ee;
-      border: 1px solid rgba(34, 211, 238, 0.3);
-      transition: all 0.3s ease;
-      margin-top: 1.5rem;
-    }
-
-    .view-all-btn:hover {
-      background-color: rgba(34, 211, 238, 0.2);
-      border-color: #22d3ee;
-      transform: translateY(-2px);
-    }
-
-    .view-all-btn svg {
-      margin-left: 0.5rem;
-      transition: transform 0.3s ease;
-    }
-
-    .view-all-btn:hover svg {
-      transform: translateX(4px);
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(55, 65, 81, 0.5);
+      color: #f472b6;
     }
   </style>
 </head>
@@ -1387,16 +1399,15 @@
 
 <header class="sticky top-0 z-50 w-full border-b border-gray-800/50 bg-[#0f0f19]/90 backdrop-blur-lg">
   <div class="container flex h-16 items-center justify-between">
-    <div class="flex items-center gap-2 fade-in">
-      <a href="index.html">
-        <img src="assets/logo.png" alt="MeowBot Logo" class="h-7 w-7 logo-img">
-      </a>
+    <a href="index.html" class="flex items-center gap-2 fade-in">
+      <img src="assets/logo.png" alt="MeowBot Logo" class="h-7 w-7 logo-img">
       <span class="text-xl font-bold">MeowBot</span>
       <span class="text-xs font-medium text-gray-400 ml-1">
         by <a href="https://taztatic.com" target="_blank" class="text-pink-400 hover:text-pink-300 transition-colors">@fucktazz</a>
       </span>
-    </div>
+    </a>
 
+    
     <nav class="hidden md:flex items-center gap-6">
       <div class="fade-in delay-100">
         <a href="index.html#features" class="text-sm font-medium text-gray-300 hover:text-pink-500 transition-colors">
@@ -1415,6 +1426,7 @@
       </div>
     </nav>
 
+    
     <div class="flex md:hidden">
       <button id="mobile-menu-button" class="text-gray-300 hover:text-pink-500 transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
@@ -1439,364 +1451,468 @@
   </div>
 </header>
 
-<div id="mobile-menu" class="md:hidden fixed inset-x-0 top-16 z-40 bg-[#121212] border-b border-gray-800 overflow-hidden hidden">
-  <div class="container py-4 flex flex-col space-y-4">
-    <a href="index.html#features" class="flex items-center justify-between py-2 text-gray-300 hover:text-pink-500 transition-colors text-sm mobile-menu-link">
-      <span>Features</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-        <path d="m9 18 6-6-6-6"></path>
-      </svg>
-    </a>
-    <a href="index.html#commands" class="flex items-center justify-between py-2 text-gray-300 hover:text-pink-500 transition-colors text-sm mobile-menu-link">
-      <span>Commands</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-        <path d="m9 18 6-6-6-6"></path>
-      </svg>
-    </a>
-    <a href="https://discord.gg/58AeY3gG" target="_blank" class="flex items-center justify-between py-2 text-gray-300 hover:text-pink-500 transition-colors text-sm">
-      <span>Support</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-        <path d="m9 18 6-6-6-6"></path>
-      </svg>
-    </a>
-    <a href="https://discord.com/oauth2/authorize?client_id=1375700760683085884&permissions=8&integration_type=0&scope=bot" target="_blank" class="w-full">
-      <button class="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-sm btn btn-primary">
-        Add to Discord
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
-          <path d="M5 12h14"></path>
-          <path d="m12 5 7 7-7 7"></path>
-        </svg>
-      </button>
-    </a>
-  </div>
-</div>
-
-<main class="flex-1">
-  <section class="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-[#0f0f19] via-[#1a0b2e] to-[#2a1052]">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-600/20 via-purple-900/10 to-transparent"></div>
-    <div class="absolute inset-0 bg-noise-pattern opacity-[0.03]"></div>
     
-    <div class="absolute inset-0 overflow-hidden pointer-events-none" id="particles-container"></div>
-
-    <div class="container px-4 md:px-6 relative">
-      <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
-        <div class="space-y-6 mb-8 fade-in">
-          <h1 class="text-4xl md:text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
-            MeowBot Commands
-          </h1>
-          <p class="max-w-[700px] text-gray-300 text-lg md:text-xl mx-auto">
-            Complete list of all commands for your virtual cat companion
-          </p>
-        </div>
+    <div id="mobile-menu" class="md:hidden fixed inset-x-0 top-16 z-40 bg-[#121212] border-b border-gray-800 overflow-hidden hidden">
+      <div class="container py-4 flex flex-col space-y-4">
+        <a href="index.html#features" class="flex items-center justify-between py-2 text-gray-300 hover:text-pink-500 transition-colors text-sm mobile-menu-link">
+          <span>Features</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </a>
+        <a href="index.html#commands" class="flex items-center justify-between py-2 text-gray-300 hover:text-pink-500 transition-colors text-sm mobile-menu-link">
+          <span>Commands</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </a>
+        <a href="https://discord.gg/58AeY3gG" target="_blank" class="flex items-center justify-between py-2 text-gray-300 hover:text-pink-500 transition-colors text-sm">
+          <span>Support</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1375700760683085884&permissions=8&integration_type=0&scope=bot" target="_blank" class="w-full">
+          <button class="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-sm btn btn-primary">
+            Add to Discord
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </a>
       </div>
     </div>
-  </section>
 
-  <section class="py-16 bg-gradient-to-b from-[#2a1052] to-[#1a0b2e] relative">
-    <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
-    <div class="absolute inset-0 bg-noise-pattern opacity-[0.03]"></div>
-    <div class="absolute inset-0 overflow-hidden pointer-events-none" id="gradient-blobs"></div>
-    
-    <div class="container px-4 md:px-6 relative">
-      <div class="max-w-5xl mx-auto">
-        <!-- Cat Commands Section -->
-        <div class="command-section fade-in">
-          <h2 class="command-section-title">Cat Commands</h2>
-          <div class="command-list">
-            <div class="command-item">
-              <div class="command-name">/adopt [breed]</div>
-              <div class="command-description">Adopt a virtual cat</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/feed [item]</div>
-              <div class="command-description">Feed your cat with items from your inventory</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/pet</div>
-              <div class="command-description">Pet your cat to increase happiness</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/play [item]</div>
-              <div class="command-description">Play with your cat using toys</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/catstats</div>
-              <div class="command-description">Check your cat's stats</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/shop</div>
-              <div class="command-description">View items available in the shop</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/buy [item]</div>
-              <div class="command-description">Purchase items from the shop</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/inventory</div>
-              <div class="command-description">View your inventory</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/daily</div>
-              <div class="command-description">Claim your daily fishcoins</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/balance</div>
-              <div class="command-description">Check your fishcoins balance</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/duel [user] [bet]</div>
-              <div class="command-description">Challenge another cat owner to a duel</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/catpic</div>
-              <div class="command-description">Get a random cat picture</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/catfact</div>
-              <div class="command-description">Get a random cat fact</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/rename [name]</div>
-              <div class="command-description">Rename your cat</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/breed [breed]</div>
-              <div class="command-description">Change your cat's breed (requires breed change item)</div>
+    <main class="flex-1">
+      
+      <section class="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-[#0f0f19] via-[#1a0b2e] to-[#2a1052]">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-600/20 via-purple-900/10 to-transparent"></div>
+        <div class="absolute inset-0 bg-noise-pattern opacity-[0.03]"></div>
+
+        <div class="container px-4 md:px-6 relative">
+          <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+            <div class="space-y-6 mb-8 fade-in">
+              <h1 class="text-4xl md:text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
+                MeowBot Commands
+              </h1>
+              <p class="max-w-[700px] text-gray-300 text-lg md:text-xl mx-auto">
+                Complete list of all commands available in MeowBot
+              </p>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Moderation Commands Section -->
-        <div class="command-section fade-in delay-100">
-          <h2 class="command-section-title">Moderation Commands</h2>
-          <div class="command-list">
-            <div class="command-item">
-              <div class="command-name">/scratch [user] [duration] [reason]</div>
-              <div class="command-description">Mute a user</div>
+      
+      <section class="py-16 bg-gradient-to-b from-[#2a1052] to-[#1a0b2e] relative">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div class="absolute inset-0 bg-noise-pattern opacity-[0.03]"></div>
+        <div class="container px-4 md:px-6 relative">
+          
+          <div class="command-section">
+            <h2 class="section-title">Cat Commands</h2>
+            <div class="command-list">
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">adopt</div>
+                  <div class="command-args">[breed]</div>
+                  <div class="command-desc">Adopt a virtual cat</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">feed</div>
+                  <div class="command-args">[item]</div>
+                  <div class="command-desc">Feed your cat with items from your inventory</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">pet</div>
+                  <div class="command-desc">Pet your cat to increase happiness</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">play</div>
+                  <div class="command-args">[item]</div>
+                  <div class="command-desc">Play with your cat using toys</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">catstats</div>
+                  <div class="command-desc">Check your cat's stats</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">shop</div>
+                  <div class="command-desc">View items available in the shop</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">buy</div>
+                  <div class="command-args">[item]</div>
+                  <div class="command-desc">Purchase items from the shop</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">inventory</div>
+                  <div class="command-desc">View your inventory</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">daily</div>
+                  <div class="command-desc">Claim your daily fishcoins</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">balance</div>
+                  <div class="command-desc">Check your fishcoins balance</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">duel</div>
+                  <div class="command-args">[user] [bet]</div>
+                  <div class="command-desc">Challenge another cat owner to a duel</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">catpic</div>
+                  <div class="command-desc">Get a random cat picture</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">catfact</div>
+                  <div class="command-desc">Get a random cat fact</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">rename</div>
+                  <div class="command-args">[name]</div>
+                  <div class="command-desc">Rename your cat</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">breed</div>
+                  <div class="command-args">[breed]</div>
+                  <div class="command-desc">Change your cat's breed (requires breed change item)</div>
+                </div>
+              </div>
             </div>
-            <div class="command-item">
-              <div class="command-name">/hiss [user] [reason]</div>
-              <div class="command-description">Warn a user</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/banish [user] [reason] [days]</div>
-              <div class="command-description">Ban a user</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/remove [user] [reason]</div>
-              <div class="command-description">Kick a user</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/purge [amount]</div>
-              <div class="command-description">Delete multiple messages</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/lock [reason]</div>
-              <div class="command-description">Lock the current channel</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/unlock</div>
-              <div class="command-description">Unlock the current channel</div>
-            </div>
-            <div class="command-item">
-              <div class="command-name">/purgebot [amount]</div>
-              <div class="command-description">Purge bot messages in this channel</div>
+          </div>
+          
+          <div class="command-section">
+            <h2 class="section-title">Moderation Commands</h2>
+            <div class="command-list">
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">scratch</div>
+                  <div class="command-args">[user] [duration] [reason]</div>
+                  <div class="command-desc">Mute a user</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">hiss</div>
+                  <div class="command-args">[user] [reason]</div>
+                  <div class="command-desc">Warn a user</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">banish</div>
+                  <div class="command-args">[user] [reason] [days]</div>
+                  <div class="command-desc">Ban a user</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">remove</div>
+                  <div class="command-args">[user] [reason]</div>
+                  <div class="command-desc">Kick a user</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">purge</div>
+                  <div class="command-args">[amount]</div>
+                  <div class="command-desc">Delete multiple messages</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">lock</div>
+                  <div class="command-args">[reason]</div>
+                  <div class="command-desc">Lock the current channel</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">unlock</div>
+                  <div class="command-desc">Unlock the current channel</div>
+                </div>
+              </div>
+              
+              <div class="command-item fade-in">
+                <div class="command-prefix">/</div>
+                <div class="command-details">
+                  <div class="command-name">purgebot</div>
+                  <div class="command-args">[amount]</div>
+                  <div class="command-desc">Purge bot messages in this channel</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="py-16 bg-gradient-to-b from-[#1a0b2e] to-[#0f0f19] relative">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-600/20 via-cyan-900/10 to-transparent"></div>
-    <div class="absolute inset-0 bg-noise-pattern opacity-[0.03]"></div>
-    <div class="container px-4 md:px-6 relative">
-      <div class="flex flex-col items-center justify-center space-y-4 text-center fade-in">
-        <div class="space-y-2">
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
-            Ready to start using MeowBot?
-          </h2>
-          <p class="max-w-[800px] text-gray-300 text-lg">
-            Add MeowBot to your Discord server today and start your cat adventure!
-          </p>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-4 mt-6 fade-in delay-200">
-          <a href="https://discord.com/oauth2/authorize?client_id=1375700760683085884&permissions=8&integration_type=0&scope=bot" target="_blank">
-            <button class="btn btn-primary group rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(236,72,153,0.5)] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
-              Add to Discord
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-5 w-5 group-hover-arrow">
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
+      
+      <section class="py-16 bg-gradient-to-b from-[#1a0b2e] to-[#0f0f19] relative">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-pink-600/20 via-pink-900/10 to-transparent"></div>
+        <div class="absolute inset-0 bg-noise-pattern opacity-[0.03]"></div>
+        <div class="container px-4 md:px-6 relative">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center fade-in">
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/20 text-purple-400 text-sm font-medium mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path>
+                <path d="M4 6v12c0 1.1.9 2 2 2h14v-4"></path>
+                <path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z"></path>
               </svg>
-            </button>
+              <span>Get Started Today</span>
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-3xl md:text-4xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                Ready to adopt your virtual cat?
+              </h2>
+              <p class="max-w-[800px] text-gray-300 text-lg">
+                Add MeowBot to your Discord server today and start your cat adventure!
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-6 fade-in delay-200">
+              <a href="https://discord.com/oauth2/authorize?client_id=1375700760683085884&permissions=8&integration_type=0&scope=bot" target="_blank">
+                <button class="btn btn-primary group rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(236,72,153,0.5)] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+                  Add to Discord
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-5 w-5 group-hover-arrow">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </a>
+              <a href="https://discord.gg/58AeY3gG" target="_blank">
+                <button class="btn btn-outline rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(34,211,238,0.5)] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+                  Join Support Server
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-gray-800/50 py-6 md:py-0 bg-[#0f0f19]">
+      <div class="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
+        <div class="flex items-center gap-2 fade-in delay-500">
+          <img src="assets/logo.png" alt="MeowBot Logo" class="h-5 w-5 logo-img">
+          <p class="text-sm text-gray-400">© 2025 MeowBot. All rights reserved.</p>
+        </div>
+        <div class="flex items-center gap-4 fade-in delay-700">
+          <a href="https://discord.gg/EkBUyfyvAt" target="_blank" class="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
+            Support Server
           </a>
-          <a href="https://discord.gg/58AeY3gG" target="_blank">
-            <button class="btn btn-outline rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(34,211,238,0.5)] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
-              Join Support Server
-            </button>
+          <a href="#" class="text-sm text-gray-400 hover:text-pink-400 transition-colors">
+            Privacy Policy
+          </a>
+          <a href="#" class="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+            Terms of Service
+          </a>
+          <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-amber-400 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+            <span class="sr-only">GitHub</span>
           </a>
         </div>
       </div>
-    </div>
-  </section>
-</main>
-
-<footer class="border-t border-gray-800/50 py-6 md:py-0 bg-[#0f0f19]">
-  <div class="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-    <div class="flex items-center gap-2 fade-in delay-500">
-      <img src="assets/logo.png" alt="MeowBot Logo" class="h-5 w-5 logo-img">
-      <p class="text-sm text-gray-400">© 2025 MeowBot. All rights reserved.</p>
-    </div>
-    <div class="flex items-center gap-4 fade-in delay-700">
-      <a href="https://discord.gg/EkBUyfyvAt" target="_blank" class="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-        Support Server
-      </a>
-      <a href="#" class="text-sm text-gray-400 hover:text-pink-400 transition-colors">
-        Privacy Policy
-      </a>
-      <a href="#" class="text-sm text-gray-400 hover:text-purple-400 transition-colors">
-        Terms of Service
-      </a>
-      <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-amber-400 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
-          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-          <path d="M9 18c-4.51 2-5-2-7-2"></path>
-        </svg>
-        <span class="sr-only">GitHub</span>
-      </a>
-    </div>
+    </footer>
   </div>
-</footer>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
-    mobileMenuButton.addEventListener('click', function() {
-      if (mobileMenu.classList.contains('hidden')) {
-        mobileMenu.classList.remove('hidden');
-        mobileMenuButton.innerHTML = `
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-            <path d="M18 6 6 18"></path>
-            <path d="m6 6 12 12"></path>
-          </svg>
-        `;
-        document.body.style.overflow = 'hidden';
-      } else {
-        mobileMenu.classList.add('hidden');
-        mobileMenuButton.innerHTML = `
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-            <line x1="4" x2="20" y1="12" y2="12"></line>
-            <line x1="4" x2="20" y1="6" y2="6"></line>
-            <line x1="4" x2="20" y1="18" y2="18"></line>
-          </svg>
-        `;
-        document.body.style.overflow = 'unset';
-      }
-    });
-
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        mobileMenu.classList.add('hidden');
-        mobileMenuButton.innerHTML = `
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-            <line x1="4" x2="20" y1="12" y2="12"></line>
-            <line x1="4" x2="20" y1="6" y2="6"></line>
-            <line x1="4" x2="20" y1="18" y2="18"></line>
-          </svg>
-        `;
-        document.body.style.overflow = 'unset';
-      });
-    });
-
-    // Particles animation
-    const particlesContainer = document.getElementById('particles-container');
-    for (let i = 0; i < 30; i++) {
-      const particle = document.createElement('div');
-      const size = Math.random() * 3 + 1;
-      const colorClass = i % 5 === 0 ? 'bg-pink-500' : 
-                        i % 5 === 1 ? 'bg-cyan-500' : 
-                        i % 5 === 2 ? 'bg-amber-500' : 
-                        i % 5 === 3 ? 'bg-purple-500' : 'bg-green-500';
-      
-      particle.className = `absolute w-1 h-1 rounded-full ${colorClass}`;
-      particle.style.width = `${size}px`;
-      particle.style.height = `${size}px`;
-      particle.style.left = `${Math.random() * 100}%`;
-      particle.style.top = `${Math.random() * 100}%`;
-      particle.style.opacity = `${Math.random() * 0.5 + 0.3}`;
-      particle.style.transform = `scale(${Math.random() * 1.5 + 0.5})`;
-      particle.style.animation = `float ${Math.random() * 10 + 10}s ease-in-out infinite alternate`;
-      particle.style.animationDelay = `${Math.random() * 5}s`;
-      
-      particlesContainer.appendChild(particle);
-    }
-
-    // Gradient blobs
-    const gradientBlobs = document.getElementById('gradient-blobs');
-    for (let i = 0; i < 6; i++) {
-      const blob = document.createElement('div');
-      const size = Math.random() * 300 + 100;
-      
-      blob.className = 'absolute rounded-full bg-gradient-to-r blur-3xl opacity-20';
-      blob.style.width = `${size}px`;
-      blob.style.height = `${size}px`;
-      blob.style.left = `${Math.random() * 100}%`;
-      blob.style.top = `${Math.random() * 100}%`;
-      
-      if (i % 3 === 0) {
-        blob.style.background = 'radial-gradient(circle, rgba(236,72,153,0.3) 0%, rgba(236,72,153,0) 70%)';
-      } else if (i % 3 === 1) {
-        blob.style.background = 'radial-gradient(circle, rgba(34,211,238,0.3) 0%, rgba(34,211,238,0) 70%)';
-      } else {
-        blob.style.background = 'radial-gradient(circle, rgba(217,119,6,0.3) 0%, rgba(217,119,6,0) 70%)';
-      }
-      
-      blob.style.animation = `float ${Math.random() * 20 + 20}s ease-in-out infinite alternate`;
-      blob.style.animationDelay = `${Math.random() * 10}s`;
-      
-      gradientBlobs.appendChild(blob);
-    }
-
-    // Arrow animation on buttons
-    document.querySelectorAll('.group-hover-arrow').forEach(arrow => {
-      const parent = arrow.closest('.group');
-      if (parent) {
-        parent.addEventListener('mouseenter', () => {
-          arrow.style.transform = 'translateX(4px)';
-        });
-        parent.addEventListener('mouseleave', () => {
-          arrow.style.transform = 'translateX(0)';
-        });
-      }
-    });
-
-    // Fade in animations for command sections
-    const animateOnScroll = () => {
-      const commandSections = document.querySelectorAll('.command-section');
-      
-      const isInViewport = (element) => {
-        const rect = element.getBoundingClientRect();
-        return (
-          rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.9 &&
-          rect.bottom >= 0
-        );
-      };
-      
-      commandSections.forEach((section, index) => {
-        if (isInViewport(section) {
-          section.classList.add('animated');
+      mobileMenuButton.addEventListener('click', function() {
+        if (mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.remove('hidden');
+          mobileMenuButton.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          `;
+          document.body.style.overflow = 'hidden';
+        } else {
+          mobileMenu.classList.add('hidden');
+          mobileMenuButton.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          `;
+          document.body.style.overflow = 'unset';
         }
       });
-    };
-    
-    animateOnScroll();
-    window.addEventListener('scroll', animateOnScroll);
-  });
-</script>
+
+      
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            const headerHeight = 64;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+
+            
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.innerHTML = `
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            `;
+            document.body.style.overflow = 'unset';
+          }
+        });
+      });
+
+      
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          if (this.getAttribute('href') !== '#') {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+              const headerHeight = 64;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+
+      
+      document.querySelectorAll('.group-hover-arrow').forEach(arrow => {
+        const parent = arrow.closest('.group');
+        if (parent) {
+          parent.addEventListener('mouseenter', () => {
+            arrow.style.transform = 'translateX(4px)';
+          });
+          parent.addEventListener('mouseleave', () => {
+            arrow.style.transform = 'translateX(0)';
+          });
+        }
+      });
+
+      
+      const animateOnScroll = () => {
+        const commandItems = document.querySelectorAll('.command-item');
+        
+        const isInViewport = (element) => {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.9 &&
+            rect.bottom >= 0
+          );
+        };
+        
+        commandItems.forEach((item, index) => {
+          if (isInViewport(item) && !item.classList.contains('animated')) {
+            item.classList.add('animated', 'fade-in');
+            item.style.animationDelay = `${index * 0.05}s`;
+          }
+        });
+      };
+      
+      
+      animateOnScroll();
+      window.addEventListener('scroll', animateOnScroll);
+    });
+  </script>
 </body>
 </html>
